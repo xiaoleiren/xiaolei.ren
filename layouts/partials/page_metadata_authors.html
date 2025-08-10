@@ -1,0 +1,23 @@
+{{- $page := . -}}
+{{- $author_ids := slice -}}
+
+{{/* 安全获取作者ID列表 */}}
+{{- if $page.Params.authors -}}
+  {{- $author_ids = $page.Params.authors -}}
+{{- else if $page.Params.author -}}
+  {{- $author_ids = slice $page.Params.author -}}
+{{- end -}}
+
+{{- if $author_ids -}}
+  <div class="article-authors">
+    {{- range $idx, $id := $author_ids -}}
+      {{- $author_page := site.GetPage (printf "/authors/%s" $id) -}}
+      {{- if $idx }}, {{ end -}}
+      {{- if $author_page -}}
+        <a href="{{ $author_page.RelPermalink }}">{{ $author_page.Title }}</a>
+      {{- else -}}
+        <span>{{ $id }}</span>
+      {{- end -}}
+    {{- end -}}
+  </div>
+{{- end -}}

@@ -1,6 +1,7 @@
 ---
+#content/_index.md
 # Leave the homepage title empty to use the site title
-title: ""
+title: "Xiaolei"
 date: 2022-10-24
 type: landing
 
@@ -14,10 +15,6 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
     design:
       css_class: dark
       background:
@@ -30,18 +27,42 @@ sections:
           size: cover
           position: center
           parallax: false
+  # - block: markdown
+  #   content:
+  #     title: '<div class="center-title">🎓 Prospective PhD Students</div>'
+  #     subtitle: ''
+  #     text: |-
+  #       <div class="centered-content">
+  #       I am always looking for self-motivated Ph.D. students...
+        
+  #       Candidates are expected to have:
+  #       <ul class="centered-list">
+  #         <li>Solid background in compilers and operating systems</li>
+  #         <li>Experience in reverse engineering</li>
+  #         <li>Strong programming skills</li>
+  #         <li>Passion for security research</li>
+  #       </ul>
+        
+  #       If you meet these requirements...
+  #       </div>
+  # 修改后的 Prospective PhD Students 区块 ▼
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '🎓 Prospective PhD Students' 
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I am always looking for self-motivated Ph.D. students who would like to carry on top-notch research on Software and Systems Security. 
         
-        Please reach out to collaborate 😃
+        Candidates are expected to have:
+        - Solid background in compilers and operating systems
+        - Strong programming skills
+        - Passion for security research
+        
+        If you meet these requirements, please contact me with your CV and research interests.
     design:
       columns: '1'
+  
+  # ...后续区块保持不变...
   - block: collection
     id: papers
     content:
@@ -51,7 +72,7 @@ sections:
           - publication
         featured_only: true
     design:
-      view: article-grid
+      view: citation
       columns: 2
   - block: collection
     content:
@@ -62,21 +83,20 @@ sections:
           - publication
         exclude_featured: false
     design:
-      view: citation
+      view: list 
   - block: collection
-    id: talks
+    id: team
     content:
-      title: Recent & Upcoming Talks
+      title: Team
       filters:
-        folders:
-          - event
+        type: author 
     design:
-      view: article-grid
+      view: card
       columns: 1
   - block: collection
     id: news
     content:
-      title: Recent News
+      title: Honors & Awards
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
