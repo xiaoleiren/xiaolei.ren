@@ -9,14 +9,12 @@ superuser: true
 highlight_name: true
 
 # FIXED ROLE FIELD
-role: |
-  Assistant Professor<br>
-  School of Computer Science and Engineering
+role: Assistant Professor
 
 # FIXED ORGANIZATIONS FIELD
 organizations:
   - name: Macau University of Science and Technology
-    url: https://www.must.edu.mo/
+    url: https://fie.must.edu.mo/id-1444/person/view/id-12435.html
 
 profiles:
   - icon: at-symbol
@@ -31,7 +29,7 @@ interests:
   - Compilers
 
 education:
-  - area: PhD Computer Science
+  - area: PhD in Computer Science
     institution: The University of Texas at Arlington
     date_start: 
     date_end: 
@@ -40,7 +38,7 @@ education:
     button:
       text: ''
       url: ''
-  - area: MEng Software Engineering
+  - area: MEng in Software Engineering
     institution: The University of Texas at Arlington
     date_start: 2016-01-01
     date_end: 2020-12-31
@@ -51,7 +49,7 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Computer Science
+  - area: BSc in Computer Science
     institution: Jilin University
     date_start: 2016-01-01
     date_end: 2020-12-31
@@ -162,4 +160,8 @@ awards:
 
 ## About Me
 
-I am an Assistant Professor at the School of Computer Science and Engineering, Faculty of Innovation Engineering, Macau University of Science and Technology. His research interests include Binary Code Analysis and Verification for Security Issues, Compiler Optimization and Code Protection, and Software Security Analysis.
+Hello and welcome to my homepage! I am an Assistant Professor at the School of Computer Science and Engineering, Macau University of Science and Technology.
+
+My research is dedicated to the core challenges of software security. We focus on pioneering techniques in binary code analysis, compiler optimization, and code protection to uncover and fix deep-seated vulnerabilities, ultimately building a more secure digital world.
+
+I am always looking for passionate and curious individuals to join my team. If you are excited about software security, low-level systems, or compiler technologies and are eager to make an impact, I would love to hear from you. Let's connect and explore the possibilities together!
