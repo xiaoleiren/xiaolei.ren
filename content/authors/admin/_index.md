@@ -9,7 +9,9 @@ superuser: true
 highlight_name: true
 
 # FIXED ROLE FIELD
-role: Assistant Professor
+role: |
+Assistant Professor
+School of Computer Science and Engineering
 
 # FIXED ORGANIZATIONS FIELD
 organizations:
