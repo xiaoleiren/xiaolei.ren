@@ -7,7 +7,7 @@
 appearance:
   mode: system
   color: emerald
-  
+
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 plugins_css: ["custom"]
@@ -58,6 +58,7 @@ locale:
 
 # Site features
 features:
+  favicon: true
   math:
     enable: false
   privacy_pack:
