@@ -9,34 +9,27 @@ sections:
     content:
       title: 📚 Teaching
       text: |-
-        ## Courses Taught
+        ## Current Courses
+        - Course Name 1
+        - Course Name 2
         
-        ### Current Semester
-        - **Course Name 1** - Course Description
-        - **Course Name 2** - Course Description
-        
-        ### Previous Semesters
-        - **Course Name 3** - Course Description
-        
+        ## Previous Courses  
+        - Course Name 3
     design:
       columns: '1'
-
+      
   - block: markdown
     content:
-      title: 🔧 Services
+      title: 🔧 Academic Services
       text: |-
-        ## Academic Services
-        
-        ### Editorial Boards
-        - Journal/Conference Name - Role
-        
-        ### Program Committee
-        - Conference Name (Year) - PC Member
-        
-        ### Reviewer
+        ## Editorial Boards
         - Journal Name
-        - Conference Name
         
+        ## Program Committee
+        - Conference Name (Year)
+        
+        ## Reviewer
+        - Journal/Conference Names
     design:
       columns: '1'
 ---

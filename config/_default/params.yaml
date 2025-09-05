@@ -7,6 +7,10 @@
 appearance:
   mode: system
   color: emerald
+  
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+plugins_css: ["custom"]
 
 # SEO
 marketing:

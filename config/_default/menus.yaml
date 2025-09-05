@@ -3,6 +3,8 @@
   #     desired widget in your `content/home/` folder.
   #   The weight parameter defines the order that the links will appear in.
 
+#menus.yaml
+
 main:
   - name: Bio
     url: /
@@ -22,3 +24,4 @@ main:
   - name: Contact
     url: /#contact
     weight: 60
+
