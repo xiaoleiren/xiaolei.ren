@@ -53,39 +53,44 @@ h3 {
   color: #5b6777;
 }
 
-/* ===== GLOBAL WIDTH: really widen all sections ===== */
-/* Stronger overrides than before */
-.container,
-.container-fluid,
+/* ===== Main content width ===== */
+/* Do NOT override all .container globally; that breaks the bio layout */
 .universal-wrapper,
 .article-style,
-.markdown-body,
-.home-section .container,
-.home-section .universal-wrapper,
-.site-footer .container {
-  width: min(94vw, 1440px) !important;
-  max-width: min(94vw, 1440px) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+.markdown-body {
+  max-width: 1320px !important;
 }
 
-/* Biography / hero area */
-.biography-title,
-.author-card,
-.avatar-wrapper,
-.portrait-title,
+/* Most homepage sections use an inner wrapper */
+.home-section .home-section-bg,
+.home-section .section-heading,
+.home-section .universal-wrapper {
+  max-width: 1320px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Specific sections you want wider */
+#highlights .universal-wrapper,
+#research .universal-wrapper,
+#publications .universal-wrapper,
+#teaching .universal-wrapper,
+#experience .universal-wrapper,
+#services .universal-wrapper,
+#awards .universal-wrapper,
+#opportunities .universal-wrapper,
+#contact .universal-wrapper {
+  max-width: 1360px !important;
+}
+
+/* ===== Restore biography layout ===== */
+/* Keep the About / biography block using its natural theme layout */
+#about .universal-wrapper,
+#about .container,
+.biography .container,
 .resume-biography .container,
 .resume-biography .universal-wrapper {
-  width: min(94vw, 1440px) !important;
-  max-width: min(94vw, 1440px) !important;
-}
-
-/* ===== Card-like blocks ===== */
-.markdown-body,
-.article-style table,
-.experience .card-simple,
-.view-citation {
-  border-radius: 14px;
+  max-width: 1200px !important;
 }
 
 /* ===== Tables ===== */
@@ -95,8 +100,9 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   background: #ffffff;
-  overflow: hidden;
   border: 1px solid #dde7f2;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .article-style th,
@@ -110,6 +116,48 @@ h3 {
 .article-style th {
   background: #eaf2fb;
   font-weight: 700;
+}
+
+/* ===== Teaching table ===== */
+/* Make only the teaching section wider and stop overlap */
+#teaching .universal-wrapper {
+  max-width: 1440px !important;
+}
+
+#teaching table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#teaching th,
+#teaching td {
+  padding: 1rem 1.1rem;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+#teaching th:nth-child(1),
+#teaching td:nth-child(1) {
+  width: 18%;
+  white-space: nowrap;
+}
+
+#teaching th:nth-child(2),
+#teaching td:nth-child(2) {
+  width: 40%;
+  white-space: normal;
+}
+
+#teaching th:nth-child(3),
+#teaching td:nth-child(3) {
+  width: 20%;
+  white-space: nowrap;
+}
+
+#teaching th:nth-child(4),
+#teaching td:nth-child(4) {
+  width: 22%;
+  white-space: nowrap;
 }
 
 /* ===== Links ===== */
@@ -149,90 +197,10 @@ a:hover {
   padding: 1rem 1.1rem;
   margin-bottom: 1rem;
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  border-radius: 14px;
 }
 
-/* ===== Footer ===== */
-.site-footer {
-  border-top: 1px solid #e4ebf3;
-  background: #f6f9fc;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-}
-
-.site-footer p,
-.site-footer .page-footer {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #5f6b7a;
-}
-
-.site-footer .container {
-  text-align: center;
-}
-
-/* Hide Hugo Blox credit line */
-.site-footer .powered-by,
-.site-footer .site-footer__credits,
-.site-footer .credits {
-  display: none !important;
-}
-
-/* ===== Teaching table: fix overlap ===== */
-/* Important: do NOT use fixed layout + nowrap everywhere */
-#teaching .container,
-#teaching .universal-wrapper,
-#teaching .article-style,
-#teaching .markdown-body {
-  width: min(96vw, 1500px) !important;
-  max-width: min(96vw, 1500px) !important;
-}
-
-#teaching table {
-  width: 100%;
-  table-layout: auto !important;
-  border-collapse: collapse;
-}
-
-#teaching th,
-#teaching td {
-  padding: 1rem 1.1rem;
-  vertical-align: top;
-  word-break: normal;
-  overflow-wrap: anywhere;
-}
-
-/* Better column guidance without forcing overlap */
-#teaching th:nth-child(1),
-#teaching td:nth-child(1) {
-  width: 18%;
-  white-space: nowrap;
-}
-
-#teaching th:nth-child(2),
-#teaching td:nth-child(2) {
-  width: 38%;
-  white-space: normal;
-}
-
-#teaching th:nth-child(3),
-#teaching td:nth-child(3) {
-  width: 20%;
-  white-space: nowrap;
-}
-
-#teaching th:nth-child(4),
-#teaching td:nth-child(4) {
-  width: 24%;
-  white-space: nowrap;
-}
-
-/* Add more breathing room between columns */
-#teaching td + td,
-#teaching th + th {
-  padding-left: 1.4rem;
-}
-
-/* ===== MUST banner section ===== */
+/* ===== MUST banner ===== */
 .must-banner {
   margin: 1rem 0 1.5rem 0;
   border-radius: 20px;
@@ -246,53 +214,45 @@ a:hover {
   height: auto;
 }
 
-/* ===== Wider sections that should feel more open ===== */
-#research .container,
-#publications .container,
-#services .container,
-#awards .container,
-#contact .container,
-#opportunities .container,
-#experience .container {
-  width: min(95vw, 1460px) !important;
-  max-width: min(95vw, 1460px) !important;
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid #e4ebf3;
+  background: #f6f9fc;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 
-/* ===== Wide screens ===== */
-@media (min-width: 1600px) {
-  .container,
-  .container-fluid,
-  .universal-wrapper,
-  .article-style,
-  .markdown-body,
-  .home-section .container,
-  .home-section .universal-wrapper,
-  .site-footer .container {
-    width: min(92vw, 1520px) !important;
-    max-width: min(92vw, 1520px) !important;
-  }
-
-  #teaching .container,
-  #teaching .universal-wrapper,
-  #teaching .article-style,
-  #teaching .markdown-body {
-    width: min(94vw, 1560px) !important;
-    max-width: min(94vw, 1560px) !important;
-  }
+.site-footer p,
+.site-footer .page-footer {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5f6b7a;
+  margin-bottom: 0;
 }
 
-/* ===== Medium screens ===== */
+.site-footer .container {
+  text-align: center;
+}
+
+/* Hide all footer lines except the first copyright line */
+.site-footer .container p:not(:first-of-type),
+.site-footer .container .powered-by,
+.site-footer .container .site-footer__credits,
+.site-footer .container .credits,
+.site-footer .container div:not(:first-child) {
+  display: none !important;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 1200px) {
-  .container,
-  .container-fluid,
   .universal-wrapper,
   .article-style,
-  .markdown-body,
-  .home-section .container,
-  .home-section .universal-wrapper,
-  .site-footer .container {
-    width: min(96vw, 100%) !important;
-    max-width: min(96vw, 100%) !important;
+  .markdown-body {
+    max-width: 100% !important;
+  }
+
+  #teaching table {
+    table-layout: auto;
   }
 
   #teaching th:nth-child(1),
@@ -305,7 +265,6 @@ a:hover {
   }
 }
 
-/* ===== Mobile friendliness ===== */
 @media (max-width: 768px) {
   .home-section,
   section {
@@ -313,31 +272,10 @@ a:hover {
     padding-bottom: 3rem;
   }
 
-  .container,
-  .container-fluid,
-  .universal-wrapper,
-  .article-style,
-  .markdown-body,
-  .home-section .container,
-  .home-section .universal-wrapper,
-  .site-footer .container {
-    width: 94vw !important;
-    max-width: 94vw !important;
-  }
-
   .article-style th,
   .article-style td {
     padding: 0.8rem 0.75rem;
     font-size: 0.96rem;
-  }
-
-  #teaching td + td,
-  #teaching th + th {
-    padding-left: 0.8rem;
-  }
-
-  #teaching table {
-    table-layout: auto !important;
   }
 
   #teaching th,
@@ -348,34 +286,4 @@ a:hover {
   .must-banner {
     border-radius: 14px;
   }
-}
-
-
-/* ===== Footer ===== */
-.site-footer {
-  border-top: 1px solid #e4ebf3;
-  background: #f6f9fc;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-}
-
-.site-footer .container {
-  text-align: center;
-}
-
-.site-footer p,
-.site-footer .page-footer {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #5f6b7a;
-  margin-bottom: 0;
-}
-
-/* Hide all footer credit lines except the first visible copyright line */
-.site-footer .container p:not(:first-of-type),
-.site-footer .container .powered-by,
-.site-footer .container .site-footer__credits,
-.site-footer .container .credits,
-.site-footer .container div:not(:first-child) {
-  display: none !important;
 }
