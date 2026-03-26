@@ -3,34 +3,38 @@ main:
     url: /#about
     weight: 10
 
+  - name: Highlights
+    url: /#highlights
+    weight: 20
+
   - name: Experience
     url: /#experience
-    weight: 20
+    weight: 30
 
   - name: Research
     url: /#research
-    weight: 30
+    weight: 40
 
   - name: Publications
     url: /#publications
-    weight: 40
+    weight: 50
 
   - name: Teaching
     url: /#teaching
-    weight: 50
+    weight: 60
 
   - name: Services
     url: /#services
-    weight: 60
+    weight: 70
 
   - name: Awards
     url: /#awards
-    weight: 70
+    weight: 80
 
   - name: Grants
     url: /#grants
-    weight: 80
+    weight: 90
 
   - name: Contact
     url: /#contact
-    weight: 90
+    weight: 100
