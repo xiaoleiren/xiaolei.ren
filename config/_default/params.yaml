@@ -35,7 +35,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Xiaolei Ren. Licensed under CC BY-NC-ND 4.0.'
+    notice: '© {year} Xiaolei Ren. All rights reserved.'
     license:
       enable: false
 
