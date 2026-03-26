@@ -1,39 +1,94 @@
-.center-title {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 2.2rem;
-}
-
-.centered-content {
-  text-align: justify;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.centered-list {
-  text-align: left;
-  display: inline-block;
-  margin: 1rem auto;
-  padding-left: 1.5rem;
-}
-/* ============================
-   Page Background - Academic Fresh Blue
-   ============================ */
-
-/* Light mode: soft sky-blue background */
+/* Overall background */
 body,
 .bg-white,
 main {
-  background-color: #f0f6fb !important;
+  background-color: #f5f8fc !important;
 }
 
-/* Section blocks - slightly lighter for contrast */
-.dark body {
-  background-color: #0f172a !important; /* keep dark mode unchanged */
+/* Dark mode */
+.dark body,
+.dark main {
+  background-color: #0f172a !important;
 }
 
-/* Hero / profile section */
-.hero-section,
-section.bg-gray-100 {
-  background-color: #e6f0f8 !important;
+/* Section spacing */
+.home-section,
+section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+/* Card-like visual rhythm */
+.home-section:nth-of-type(odd) {
+  background: #f5f8fc;
+}
+
+.home-section:nth-of-type(even) {
+  background: #eef4fb;
+}
+
+.dark .home-section:nth-of-type(odd),
+.dark .home-section:nth-of-type(even) {
+  background: #0f172a;
+}
+
+/* Section titles */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+.section-heading h1,
+.section-heading h2 {
+  font-weight: 700;
+}
+
+/* Biography text width */
+.article-style,
+.universal-wrapper {
+  max-width: 980px;
+}
+
+/* Markdown tables */
+.article-style table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-style th,
+.article-style td {
+  border: 1px solid #d9e3f0;
+  padding: 0.8rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-style th {
+  background: #eaf2fb;
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Profile photo */
+.avatar,
+.portrait {
+  border-radius: 18px !important;
+}
+
+/* Improve readability for lists */
+.article-style ul li,
+.article-style ol li {
+  margin-bottom: 0.35rem;
 }
