@@ -1,5 +1,5 @@
 ---
-title: ""
+title: Home
 type: landing
 
 sections:
@@ -101,7 +101,7 @@ sections:
         | Course | Title | Level | Term |
         |---|---|---|---|
         | EIE 331 | Embedded Systems Design | Undergraduate | Fall 2024, 2025 |
-        | CS/EIE/SE 471 | Computer and Network Security | Undergraduate | Spring 2025, 2026 |
+        | CS/EIE/SE-471 | Computer and Network Security | Undergraduate | Spring 2025, 2026 |
         | SE 252 | Software Project Management | Undergraduate | Spring 2025, 2026 |
         | MIIE01 | Advanced Topics in Information Technology | Master's | Fall 2025 |
         | DNCZ04 | Cybersecurity | Doctoral/PhD | Spring 2025, 2026 |
@@ -112,13 +112,23 @@ sections:
     design:
       columns: '1'
 
-  - block: resume-experience
+  - block: markdown
     id: experience
     content:
-      username: admin
+      title: Experience and Education
+      subtitle: ''
+      text: |-
+        ### Academic Positions
+        - **Assistant Professor**, School of Computer Science and Engineering, Faculty of Innovation Engineering, Macau University of Science and Technology (MUST)
+        - **Research Associate**, Department of Computer Science and Technology, Tsinghua University
+        - **Graduate Research Assistant / Teaching Assistant**, The University of Texas at Arlington
+
+        ### Academic Qualification
+        - **Ph.D. in Computer Science**, The University of Texas at Arlington, USA
+        - **M.S. in Software Engineering**, The University of Texas at Arlington, USA
+        - **B.S. in Computer Science**, Jilin University, China
     design:
-      date_format: 'Jan 2006'
-      is_education_first: true
+      columns: '2'
 
   - block: markdown
     id: services
@@ -165,6 +175,22 @@ sections:
         - Member, CCF / ACM / IEEE
     design:
       columns: '2'
+
+  - block: markdown
+    id: opportunities
+    content:
+      title: Student Opportunities at MUST
+      subtitle: ''
+      text: |-
+        <div class="must-banner">
+          <img src="/uploads/Welcome-to-join-MUST-2024.jpg" alt="Welcome to join MUST at Macau University of Science and Technology">
+        </div>
+
+        I welcome motivated undergraduate, master's, and PhD students to work with me on **software security**, **program analysis**, **trustworthy AI**, and **intelligent systems**.
+
+        If you are interested in joining my group at Macau University of Science and Technology, please feel free to [contact me](mailto:xlren@must.edu.mo).
+    design:
+      columns: '1'
 
   - block: markdown
     id: contact
