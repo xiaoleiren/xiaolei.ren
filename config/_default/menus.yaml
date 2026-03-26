@@ -7,20 +7,20 @@ main:
     url: /#highlights
     weight: 20
 
-  - name: Experience
-    url: /#experience
-    weight: 30
-
   - name: Research
     url: /#research
-    weight: 40
+    weight: 30
 
   - name: Publications
     url: /#publications
-    weight: 50
+    weight: 40
 
   - name: Teaching
     url: /#teaching
+    weight: 50
+
+  - name: Experience
+    url: /#experience
     weight: 60
 
   - name: Services
@@ -31,10 +31,6 @@ main:
     url: /#awards
     weight: 80
 
-  - name: Grants
-    url: /#grants
-    weight: 90
-
   - name: Contact
     url: /#contact
-    weight: 100
+    weight: 90
