@@ -37,7 +37,9 @@ section {
 }
 
 /* ===== Headings ===== */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   letter-spacing: -0.02em;
 }
 
@@ -51,10 +53,22 @@ h1, h2, h3 {
   color: #5b6777;
 }
 
-/* ===== Content width ===== */
+/* ===== Global content width ===== */
+/* Increase overall page width so all sections breathe more */
+.universal-wrapper,
 .article-style,
-.universal-wrapper {
-  max-width: 1040px;
+.markdown-body,
+.home-section .container,
+.site-footer .container {
+  max-width: 1280px !important;
+}
+
+/* Slightly wider biography / hero area */
+.biography-title,
+.author-card,
+.avatar-wrapper,
+.portrait-title {
+  max-width: 1280px;
 }
 
 /* ===== Card-like blocks ===== */
@@ -79,7 +93,7 @@ h1, h2, h3 {
 .article-style th,
 .article-style td {
   border: 1px solid #dde7f2;
-  padding: 0.85rem 0.95rem;
+  padding: 0.9rem 1rem;
   text-align: left;
   vertical-align: top;
 }
@@ -132,46 +146,35 @@ a:hover {
 .site-footer {
   border-top: 1px solid #e4ebf3;
   background: #f6f9fc;
-}
-/* ===== Footer cleanup ===== */
-.site-footer {
-  border-top: 1px solid #e4ebf3;
-  background: #f6f9fc;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
 
 .site-footer p,
-.site-footer .powered-by,
-.site-footer .powered-by a,
 .site-footer .page-footer {
   font-size: 0.95rem;
   line-height: 1.6;
   color: #5f6b7a;
 }
 
-/* Make the Hugo Blox credit quieter */
-.site-footer .powered-by {
-  margin-top: 0.25rem;
-  font-size: 0.86rem;
-  opacity: 0.72;
-}
-
-/* Better spacing for footer text */
 .site-footer .container {
   text-align: center;
 }
 
-/* Hide theme credit line */
-.site-footer .powered-by {
+/* Hide Hugo Blox credit line */
+.site-footer .powered-by,
+.site-footer .site-footer__credits,
+.site-footer .credits {
   display: none !important;
 }
 
-/* ===== Teaching courses table: better width and controlled wrapping ===== */
+/* ===== Teaching courses table ===== */
+/* Make the teaching block use more width and prevent columns crashing together */
 #teaching .universal-wrapper,
 #teaching .article-style,
-#teaching .markdown-body {
-  max-width: 1280px !important;
+#teaching .markdown-body,
+#teaching .container {
+  max-width: 1360px !important;
 }
 
 #teaching table {
@@ -182,17 +185,21 @@ a:hover {
 #teaching th,
 #teaching td {
   vertical-align: top;
+  padding: 1rem 1rem;
 }
 
+/* Column widths tuned for course table */
 #teaching th:nth-child(1),
 #teaching td:nth-child(1) {
-  width: 18%;
+  width: 20%;
   white-space: nowrap;
 }
 
 #teaching th:nth-child(2),
 #teaching td:nth-child(2) {
-  width: 40%;
+  width: 36%;
+  white-space: normal;
+  word-break: normal;
 }
 
 #teaching th:nth-child(3),
@@ -203,22 +210,67 @@ a:hover {
 
 #teaching th:nth-child(4),
 #teaching td:nth-child(4) {
-  width: 22%;
+  width: 24%;
   white-space: nowrap;
 }
 
-#teaching th:nth-child(4),
-#teaching td:nth-child(4) {
-  width: 20%;
+/* Add a little visual breathing room between columns */
+#teaching td + td,
+#teaching th + th {
+  padding-left: 1.35rem;
 }
 
-/* Hide Hugo Blox credit line */
-.site-footer .powered-by {
-  display: none !important;
+/* ===== Better spacing for wide screens ===== */
+@media (min-width: 1400px) {
+  .universal-wrapper,
+  .article-style,
+  .markdown-body,
+  .home-section .container,
+  .site-footer .container {
+    max-width: 1360px !important;
+  }
 }
 
-.site-footer .powered-by,
-.site-footer .site-footer__credits,
-.site-footer .credits {
-  display: none !important;
+/* ===== Prevent layout issues on medium screens ===== */
+@media (max-width: 1100px) {
+  .universal-wrapper,
+  .article-style,
+  .markdown-body,
+  .home-section .container,
+  .site-footer .container {
+    max-width: 100% !important;
+  }
+
+  #teaching table {
+    table-layout: auto;
+  }
+
+  #teaching th:nth-child(1),
+  #teaching td:nth-child(1),
+  #teaching th:nth-child(3),
+  #teaching td:nth-child(3),
+  #teaching th:nth-child(4),
+  #teaching td:nth-child(4) {
+    white-space: normal;
+  }
+}
+
+/* ===== Mobile friendliness ===== */
+@media (max-width: 768px) {
+  .home-section,
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .article-style th,
+  .article-style td {
+    padding: 0.8rem 0.75rem;
+    font-size: 0.96rem;
+  }
+
+  #teaching td + td,
+  #teaching th + th {
+    padding-left: 0.8rem;
+  }
 }
