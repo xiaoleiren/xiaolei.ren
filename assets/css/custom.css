@@ -16,3 +16,24 @@
   margin: 1rem auto;
   padding-left: 1.5rem;
 }
+/* ============================
+   Page Background - Academic Fresh Blue
+   ============================ */
+
+/* Light mode: soft sky-blue background */
+body,
+.bg-white,
+main {
+  background-color: #f0f6fb !important;
+}
+
+/* Section blocks - slightly lighter for contrast */
+.dark body {
+  background-color: #0f172a !important; /* keep dark mode unchanged */
+}
+
+/* Hero / profile section */
+.hero-section,
+section.bg-gray-100 {
+  background-color: #e6f0f8 !important;
+}
