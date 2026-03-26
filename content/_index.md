@@ -30,14 +30,6 @@ sections:
     design:
       columns: '2'
 
-  - block: resume-experience
-    id: experience
-    content:
-      username: admin
-    design:
-      date_format: 'Jan 2006'
-      is_education_first: true
-
   - block: markdown
     id: research
     content:
@@ -114,11 +106,19 @@ sections:
         | MIIE01 | Advanced Topics in Information Technology | Master's | Fall 2025 |
         | DNCZ04 | Cybersecurity | Doctoral/PhD | Spring 2025, 2026 |
 
-        I am also building a teaching showcase page featuring **student project demos and short videos**, especially for embedded systems projects.
+        I am building a teaching showcase page featuring **student project demos and short videos**, especially for embedded systems projects.
 
         [Explore teaching and student demos](/teaching/)
     design:
       columns: '1'
+
+  - block: resume-experience
+    id: experience
+    content:
+      username: admin
+    design:
+      date_format: 'Jan 2006'
+      is_education_first: true
 
   - block: markdown
     id: services
@@ -147,18 +147,16 @@ sections:
     design:
       columns: '2'
 
-  - block: resume-awards
+  - block: markdown
     id: awards
     content:
-      title: Awards
-      username: admin
-
-  - block: markdown
-    id: grants
-    content:
-      title: Research Grants
+      title: Awards and Grants
       subtitle: ''
       text: |-
+        ### Award
+        - **ACM SIGPLAN Distinguished Paper Award**, PLDI 2021
+
+        ### Research Grants
         - **PI**, Research Project (0011/2025/ITP1), supported by the FDCT, 2025–2027
         - **PI**, Research Project (0134/2024/RIB2), supported by the FDCT, 2025–2027
         - **PI**, Faculty Research Grant, MUST, 2025–2026
