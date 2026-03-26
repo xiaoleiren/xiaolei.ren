@@ -1,12 +1,11 @@
 # SITE SETUP
 # Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
 appearance:
   mode: system
-  color: emerald
+  color: indigo
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
@@ -17,8 +16,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'Xiaolei Ren, MUST, UT Arlington, Compiler, Security.'
+    org_name: 'Macau University of Science and Technology'
+    description: 'Xiaolei Ren is an Assistant Professor at MUST. His research covers software security, binary code analysis, compiler optimization, and trustworthy AI systems.'
     twitter: ''
   analytics:
     google_analytics: ''
@@ -44,7 +43,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Xiaolei Ren. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -63,8 +62,3 @@ features:
     enable: false
   privacy_pack:
     enable: false
-author: "admin"
-authors:
-  admin:
-    name: "任"
-    role: "Professor"
