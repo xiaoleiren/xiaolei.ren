@@ -1,25 +1,36 @@
-# Navigation Menu
-# Weight controls the display order (lower = further left).
-
 main:
   - name: About
     url: /#about
     weight: 10
+
+  - name: Experience
+    url: /#experience
+    weight: 20
+
   - name: Research
     url: /#research
-    weight: 20
+    weight: 30
+
   - name: Publications
     url: /#publications
-    weight: 30
-  - name: Teaching
-    url: /teaching/
     weight: 40
+
+  - name: Teaching
+    url: /#teaching
+    weight: 50
+
+  - name: Services
+    url: /#services
+    weight: 60
+
   - name: Awards
     url: /#awards
-    weight: 50
-  - name: Team
-    url: /#team
-    weight: 60
+    weight: 70
+
+  - name: Grants
+    url: /#grants
+    weight: 80
+
   - name: Contact
     url: /#contact
-    weight: 70
+    weight: 90
