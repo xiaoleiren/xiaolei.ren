@@ -1,5 +1,5 @@
 ---
-title: Home
+title: ""
 type: landing
 
 sections:
