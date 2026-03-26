@@ -54,7 +54,6 @@ h3 {
 }
 
 /* ===== Global content width ===== */
-/* Increase overall page width so all sections breathe more */
 .universal-wrapper,
 .article-style,
 .markdown-body,
@@ -63,7 +62,6 @@ h3 {
   max-width: 1280px !important;
 }
 
-/* Slightly wider biography / hero area */
 .biography-title,
 .author-card,
 .avatar-wrapper,
@@ -169,7 +167,6 @@ a:hover {
 }
 
 /* ===== Teaching courses table ===== */
-/* Make the teaching block use more width and prevent columns crashing together */
 #teaching .universal-wrapper,
 #teaching .article-style,
 #teaching .markdown-body,
@@ -188,7 +185,6 @@ a:hover {
   padding: 1rem 1rem;
 }
 
-/* Column widths tuned for course table */
 #teaching th:nth-child(1),
 #teaching td:nth-child(1) {
   width: 20%;
@@ -214,10 +210,29 @@ a:hover {
   white-space: nowrap;
 }
 
-/* Add a little visual breathing room between columns */
 #teaching td + td,
 #teaching th + th {
   padding-left: 1.35rem;
+}
+
+/* ===== MUST banner section ===== */
+.must-banner {
+  margin: 1rem 0 1.5rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+}
+
+.must-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== Wider contact/opportunities sections ===== */
+#opportunities .container,
+#contact .container {
+  max-width: 1360px !important;
 }
 
 /* ===== Better spacing for wide screens ===== */
@@ -272,5 +287,9 @@ a:hover {
   #teaching td + td,
   #teaching th + th {
     padding-left: 0.8rem;
+  }
+
+  .must-banner {
+    border-radius: 14px;
   }
 }
