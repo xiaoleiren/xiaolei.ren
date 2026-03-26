@@ -1,30 +1,34 @@
-/* Overall background */
+/* ===== Overall background ===== */
 body,
 .bg-white,
 main {
-  background-color: #f5f8fc !important;
+  background-color: #f6f9fc !important;
 }
 
-/* Dark mode */
 .dark body,
 .dark main {
   background-color: #0f172a !important;
 }
 
-/* Section spacing */
-.home-section,
-section {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+/* ===== Navbar ===== */
+.navbar {
+  backdrop-filter: saturate(180%) blur(12px);
+  box-shadow: 0 1px 10px rgba(15, 23, 42, 0.05);
 }
 
-/* Card-like visual rhythm */
+/* ===== Section rhythm ===== */
+.home-section,
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .home-section:nth-of-type(odd) {
-  background: #f5f8fc;
+  background: #f6f9fc;
 }
 
 .home-section:nth-of-type(even) {
-  background: #eef4fb;
+  background: #eef4fa;
 }
 
 .dark .home-section:nth-of-type(odd),
@@ -32,37 +36,50 @@ section {
   background: #0f172a;
 }
 
-/* Section titles */
+/* ===== Headings ===== */
 h1, h2, h3 {
   letter-spacing: -0.02em;
 }
 
 .section-heading h1,
 .section-heading h2 {
-  font-weight: 700;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
 }
 
-/* Biography text width */
+.section-heading p {
+  color: #5b6777;
+}
+
+/* ===== Content width ===== */
 .article-style,
 .universal-wrapper {
-  max-width: 980px;
+  max-width: 1040px;
 }
 
-/* Markdown tables */
+/* ===== Card-like blocks ===== */
+.markdown-body,
+.article-style table,
+.experience .card-simple,
+.view-citation {
+  border-radius: 14px;
+}
+
+/* ===== Tables ===== */
 .article-style table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   background: #ffffff;
-  border-radius: 10px;
   overflow: hidden;
+  border: 1px solid #dde7f2;
 }
 
 .article-style th,
 .article-style td {
-  border: 1px solid #d9e3f0;
-  padding: 0.8rem 0.9rem;
+  border: 1px solid #dde7f2;
+  padding: 0.85rem 0.95rem;
   text-align: left;
   vertical-align: top;
 }
@@ -72,7 +89,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-/* Links */
+/* ===== Links ===== */
 a {
   text-decoration: none;
 }
@@ -81,14 +98,38 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Profile photo */
-.avatar,
-.portrait {
-  border-radius: 18px !important;
+/* ===== Buttons ===== */
+.btn,
+.btn-primary {
+  border-radius: 999px !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* Improve readability for lists */
+/* ===== Profile image ===== */
+.avatar,
+.portrait {
+  border-radius: 20px !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* ===== Lists ===== */
 .article-style ul li,
 .article-style ol li {
   margin-bottom: 0.35rem;
+}
+
+/* ===== Publications ===== */
+.view-citation {
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid #e4ebf3;
+  background: #f6f9fc;
 }
