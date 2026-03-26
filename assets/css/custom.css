@@ -166,3 +166,41 @@ a:hover {
 .site-footer .powered-by {
   display: none !important;
 }
+
+/* ===== Teaching courses table: wider and no awkward wrapping ===== */
+#teaching .universal-wrapper,
+#teaching .article-style,
+#teaching .markdown-body {
+  max-width: 1280px !important;
+}
+
+#teaching table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#teaching th,
+#teaching td {
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+#teaching th:nth-child(1),
+#teaching td:nth-child(1) {
+  width: 18%;
+}
+
+#teaching th:nth-child(2),
+#teaching td:nth-child(2) {
+  width: 40%;
+}
+
+#teaching th:nth-child(3),
+#teaching td:nth-child(3) {
+  width: 22%;
+}
+
+#teaching th:nth-child(4),
+#teaching td:nth-child(4) {
+  width: 20%;
+}
