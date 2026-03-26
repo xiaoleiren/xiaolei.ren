@@ -161,3 +161,8 @@ a:hover {
 .site-footer .container {
   text-align: center;
 }
+
+/* Hide theme credit line */
+.site-footer .powered-by {
+  display: none !important;
+}
