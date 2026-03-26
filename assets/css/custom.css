@@ -167,7 +167,7 @@ a:hover {
   display: none !important;
 }
 
-/* ===== Teaching courses table: wider and no awkward wrapping ===== */
+/* ===== Teaching courses table: better width and controlled wrapping ===== */
 #teaching .universal-wrapper,
 #teaching .article-style,
 #teaching .markdown-body {
@@ -181,13 +181,13 @@ a:hover {
 
 #teaching th,
 #teaching td {
-  white-space: nowrap;
   vertical-align: top;
 }
 
 #teaching th:nth-child(1),
 #teaching td:nth-child(1) {
   width: 18%;
+  white-space: nowrap;
 }
 
 #teaching th:nth-child(2),
@@ -197,7 +197,14 @@ a:hover {
 
 #teaching th:nth-child(3),
 #teaching td:nth-child(3) {
+  width: 20%;
+  white-space: nowrap;
+}
+
+#teaching th:nth-child(4),
+#teaching td:nth-child(4) {
   width: 22%;
+  white-space: nowrap;
 }
 
 #teaching th:nth-child(4),
