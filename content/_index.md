@@ -44,6 +44,8 @@ sections:
       title: Research Areas
       subtitle: ''
       text: |-
+        My research lies at the intersection of **software security**, **program analysis**, and **trustworthy intelligent systems**, with an emphasis on building automated, reliable, and secure computing foundations.
+
         ### Software Security and Program Analysis
         Building automated methods to detect, explain, and eliminate vulnerabilities in complex software systems.
 
@@ -58,6 +60,10 @@ sections:
 
         ### AI for Software Comprehension
         Leveraging machine learning and agentic workflows for code understanding, testing, and hardening.
+
+        ### Openings
+        I am actively looking for motivated students at the undergraduate, master's, and doctoral levels.  
+        If you are interested in joining my group, please contact me by email.
     design:
       columns: '2'
 
@@ -99,13 +105,20 @@ sections:
         - security-oriented thinking
         - collaborative software development
 
-        Featured courses include **Embedded Systems Design**, **Computer and Network Security**, and **Software Project Management**.
+        ### Courses
+        | Course | Title | Level | Term |
+        |---|---|---|---|
+        | EIE 331 | Embedded Systems Design | Undergraduate | Fall 2024, 2025 |
+        | CS/EIE/SE 471 | Computer and Network Security | Undergraduate | Spring 2025, 2026 |
+        | SE 252 | Software Project Management | Undergraduate | Spring 2025, 2026 |
+        | MIIE01 | Advanced Topics in Information Technology | Master's | Fall 2025 |
+        | DNCZ04 | Cybersecurity | Doctoral/PhD | Spring 2025, 2026 |
 
-        I am also building a teaching showcase page with **student project demos and short videos**, especially for embedded systems projects.
+        I am also building a teaching showcase page featuring **student project demos and short videos**, especially for embedded systems projects.
 
         [Explore teaching and student demos](/teaching/)
     design:
-      columns: '2'
+      columns: '1'
 
   - block: markdown
     id: services
