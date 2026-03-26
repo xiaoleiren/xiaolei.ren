@@ -287,3 +287,33 @@ a:hover {
     border-radius: 14px;
   }
 }
+
+/* ===== Teaching page table ===== */
+#courses .universal-wrapper,
+#courses .article-style,
+#courses .markdown-body {
+  max-width: 1500px !important;
+}
+
+#courses table {
+  width: 100%;
+  table-layout: auto;
+}
+
+#courses th,
+#courses td {
+  padding: 1rem 1.1rem;
+  vertical-align: top;
+}
+
+#courses th:nth-child(1),
+#courses td:nth-child(1) {
+  white-space: nowrap;
+}
+
+#courses th:nth-child(3),
+#courses td:nth-child(3),
+#courses th:nth-child(4),
+#courses td:nth-child(4) {
+  white-space: nowrap;
+}
