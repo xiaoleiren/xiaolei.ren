@@ -211,3 +211,14 @@ a:hover {
 #teaching td:nth-child(4) {
   width: 20%;
 }
+
+/* Hide Hugo Blox credit line */
+.site-footer .powered-by {
+  display: none !important;
+}
+
+.site-footer .powered-by,
+.site-footer .site-footer__credits,
+.site-footer .credits {
+  display: none !important;
+}
