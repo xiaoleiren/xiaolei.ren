@@ -1,5 +1,5 @@
 ---
-title: Xiaolei Ren
+title: Home
 type: landing
 
 sections:
