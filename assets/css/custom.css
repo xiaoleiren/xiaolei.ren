@@ -133,3 +133,31 @@ a:hover {
   border-top: 1px solid #e4ebf3;
   background: #f6f9fc;
 }
+/* ===== Footer cleanup ===== */
+.site-footer {
+  border-top: 1px solid #e4ebf3;
+  background: #f6f9fc;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.site-footer p,
+.site-footer .powered-by,
+.site-footer .powered-by a,
+.site-footer .page-footer {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5f6b7a;
+}
+
+/* Make the Hugo Blox credit quieter */
+.site-footer .powered-by {
+  margin-top: 0.25rem;
+  font-size: 0.86rem;
+  opacity: 0.72;
+}
+
+/* Better spacing for footer text */
+.site-footer .container {
+  text-align: center;
+}
