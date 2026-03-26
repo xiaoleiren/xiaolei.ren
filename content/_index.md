@@ -97,20 +97,18 @@ sections:
         - security-oriented thinking
         - collaborative software development
 
-        ### Courses
-        | Course | Title | Level | Term |
-        |---|---|---|---|
-        | EIE 331 | Embedded Systems Design | Undergraduate | Fall 2024, 2025 |
-        | CS/EIE/SE-471 | Computer and Network Security | Undergraduate | Spring 2025, 2026 |
-        | SE 252 | Software Project Management | Undergraduate | Spring 2025, 2026 |
-        | MIIE01 | Advanced Topics in Information Technology | Master's | Fall 2025 |
-        | DNCZ04 | Cybersecurity | Doctoral/PhD | Spring 2025, 2026 |
+        Recent teaching includes:
+        - **Embedded Systems Design**
+        - **Computer and Network Security**
+        - **Software Project Management**
+        - **Advanced Topics in Information Technology**
+        - **Cybersecurity**
 
-        I am building a teaching showcase page featuring **student project demos and short videos**, especially for embedded systems projects.
+        I am building a teaching showcase page featuring **course information**, **student project demos**, and **short videos**, especially for embedded systems projects.
 
         [Explore teaching and student demos](/teaching/)
     design:
-      columns: '1'
+      columns: '2'
 
   - block: markdown
     id: experience
