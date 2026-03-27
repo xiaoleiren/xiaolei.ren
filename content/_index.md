@@ -22,11 +22,10 @@ sections:
       title: Highlights
       subtitle: ''
       text: |-
-        - **Assistant Professor** at the School of Computer Science and Engineering, Faculty of Innovation Engineering, MUST
-        - **ACM SIGPLAN Distinguished Paper Award**, PLDI 2021
-        - Recent work accepted at **FSE 2025**
-        - **PI** of multiple FDCT and MUST-funded research projects
-        - Actively recruiting **undergraduate, master's, and PhD students**
+        - Assistant Professor at MUST
+        - ACM SIGPLAN Distinguished Paper Award (PLDI 2021)
+        - Recent work accepted at FSE 2025
+        - Recruiting students and research collaborators
     design:
       columns: '2'
 
