@@ -32,29 +32,22 @@ sections:
   - block: markdown
     id: research
     content:
-      title: Research Areas
+      title: Research
       subtitle: ''
       text: |-
-        My research lies at the intersection of **software security**, **program analysis**, and **trustworthy intelligent systems**, with an emphasis on building automated, reliable, and secure computing foundations.
+        My research centers on building secure, reliable, and intelligent software systems.
 
-        ### Software Security and Program Analysis
-        Building automated methods to detect, explain, and eliminate vulnerabilities in complex software systems.
+        ### Software Security
+        Automated techniques for vulnerability detection, analysis, and mitigation.
 
-        ### Binary Analysis and Compiler Optimization
-        Studying how compiler optimizations affect binary similarity, differencing, and downstream security analysis.
+        ### Program and Binary Analysis
+        Methods for understanding compiled code, program behavior, and optimization effects.
 
-        ### Trustworthy Foundation Models
-        Exploring security, privacy, and alignment challenges in large AI systems and intelligent software agents.
+        ### Trustworthy AI for Software
+        Reliability, security, and alignment in foundation models and software agents.
 
-        ### Embodied AI and Robotics
-        Designing safe motion planning and adaptive control methods for intelligent robotic systems.
-
-        ### AI for Software Comprehension
-        Leveraging machine learning and agentic workflows for code understanding, testing, and hardening.
-
-        ### Openings
-        I am actively looking for motivated students at the undergraduate, master's, and doctoral levels.  
-        If you are interested in joining my group, please contact me by email.
+        ### AI-Driven Software Comprehension
+        Learning-based methods for code understanding, testing, and hardening.
     design:
       columns: '2'
 
@@ -88,42 +81,28 @@ sections:
       title: Teaching
       subtitle: ''
       text: |-
-        I teach courses in embedded systems, cybersecurity, and software engineering across undergraduate, master's, and doctoral levels.
+        I teach courses in embedded systems, cybersecurity, and software engineering.
 
-        My teaching emphasizes:
-        - hands-on systems building
-        - project-based learning
-        - security-oriented thinking
-        - collaborative software development
-
-        Recent teaching includes:
+        Recent courses include:
         - **Embedded Systems Design**
         - **Computer and Network Security**
         - **Software Project Management**
         - **Advanced Topics in Information Technology**
         - **Cybersecurity**
 
-        I am building a teaching showcase page featuring **course information**, **student project demos**, and **short videos**, especially for embedded systems projects.
-
-        [Explore teaching and student demos](/teaching/)
+        [Explore teaching](/teaching/)
     design:
       columns: '2'
 
   - block: markdown
     id: experience
     content:
-      title: Experience and Education
+      title: Experience
       subtitle: ''
       text: |-
-        ### Academic Positions
-        - **Assistant Professor**, School of Computer Science and Engineering, Faculty of Innovation Engineering, Macau University of Science and Technology (MUST)
-        - **Research Associate**, Department of Computer Science and Technology, Tsinghua University
+        - **Assistant Professor**, Macau University of Science and Technology
+        - **Research Associate**, Tsinghua University
         - **Graduate Research Assistant / Teaching Assistant**, The University of Texas at Arlington
-
-        ### Academic Qualification
-        - **Ph.D. in Computer Science**, The University of Texas at Arlington, USA
-        - **M.S. in Software Engineering**, The University of Texas at Arlington, USA
-        - **B.S. in Computer Science**, Jilin University, China
     design:
       columns: '2'
 
@@ -176,16 +155,16 @@ sections:
   - block: markdown
     id: opportunities
     content:
-      title: Student Opportunities at MUST
+      title: Opportunities
       subtitle: ''
       text: |-
         <div class="must-banner">
           <img src="/uploads/Welcome-to-join-MUST-2024.jpg" alt="Welcome to join MUST at Macau University of Science and Technology">
         </div>
 
-        I welcome motivated undergraduate, master's, and PhD students to work with me on **software security**, **program analysis**, **trustworthy AI**, and **intelligent systems**.
+        I am recruiting undergraduate, master's, and PhD students interested in software security, program analysis, and trustworthy AI.
 
-        If you are interested in joining my group at Macau University of Science and Technology, please feel free to [contact me](mailto:xlren@must.edu.mo).
+        Please get in touch by [email](mailto:xlren@must.edu.mo).
     design:
       columns: '1'
 
@@ -196,16 +175,11 @@ sections:
       subtitle: ''
       text: |-
         **Xiaolei Ren**  
-        Assistant Professor  
-        School of Computer Science and Engineering  
-        Faculty of Innovation Engineering  
-        Macau University of Science and Technology
+        Assistant Professor, Macau University of Science and Technology
 
         - Email: [xlren@must.edu.mo](mailto:xlren@must.edu.mo)
         - Google Scholar: [Profile](https://scholar.google.com/citations?user=E4KRUtoAAAAJ&hl=en)
         - Faculty Profile: [MUST Page](https://fie.must.edu.mo/id-1444/person/view/id-12435.html)
-
-        I welcome inquiries regarding **student opportunities**, **research collaboration**, **invited talks**, and **academic service**.
     design:
       columns: '2'
 ---
