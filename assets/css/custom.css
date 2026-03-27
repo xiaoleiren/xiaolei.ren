@@ -1,4 +1,4 @@
-/* ===== Overall background ===== */
+/* ===== Background ===== */
 body,
 .bg-white,
 main {
@@ -19,24 +19,11 @@ main {
 /* ===== Section rhythm ===== */
 .home-section,
 section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
-.home-section:nth-of-type(odd) {
-  background: #f6f9fc;
-}
-
-.home-section:nth-of-type(even) {
-  background: #eef4fa;
-}
-
-.dark .home-section:nth-of-type(odd),
-.dark .home-section:nth-of-type(even) {
-  background: #0f172a;
-}
-
-/* ===== Headings ===== */
+/* ===== Typography ===== */
 h1,
 h2,
 h3 {
@@ -46,118 +33,20 @@ h3 {
 .section-heading h1,
 .section-heading h2 {
   font-weight: 800;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .section-heading p {
   color: #5b6777;
 }
 
-/* ===== Main content width ===== */
-/* Do NOT override all .container globally; that breaks the bio layout */
-.universal-wrapper,
-.article-style,
-.markdown-body {
-  max-width: 1320px !important;
-}
-
-/* Most homepage sections use an inner wrapper */
-.home-section .home-section-bg,
-.home-section .section-heading,
-.home-section .universal-wrapper {
-  max-width: 1320px !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Specific sections you want wider */
-#highlights .universal-wrapper,
-#research .universal-wrapper,
-#publications .universal-wrapper,
-#teaching .universal-wrapper,
-#experience .universal-wrapper,
-#services .universal-wrapper,
-#awards .universal-wrapper,
-#opportunities .universal-wrapper,
-#contact .universal-wrapper {
-  max-width: 1360px !important;
-}
-
-/* ===== Restore biography layout ===== */
-/* Keep the About / biography block using its natural theme layout */
+/* ===== About section: keep default/natural width ===== */
 #about .universal-wrapper,
 #about .container,
 .biography .container,
 .resume-biography .container,
 .resume-biography .universal-wrapper {
-  max-width: 1200px !important;
-}
-
-/* ===== Tables ===== */
-.article-style table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  background: #ffffff;
-  border: 1px solid #dde7f2;
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-.article-style th,
-.article-style td {
-  border: 1px solid #dde7f2;
-  padding: 0.95rem 1.05rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.article-style th {
-  background: #eaf2fb;
-  font-weight: 700;
-}
-
-/* ===== Teaching table ===== */
-/* Make only the teaching section wider and stop overlap */
-#teaching .universal-wrapper {
-  max-width: 1440px !important;
-}
-
-#teaching table {
-  width: 100%;
-  table-layout: fixed;
-}
-
-#teaching th,
-#teaching td {
-  padding: 1rem 1.1rem;
-  vertical-align: top;
-  overflow-wrap: break-word;
-}
-
-#teaching th:nth-child(1),
-#teaching td:nth-child(1) {
-  width: 18%;
-  white-space: nowrap;
-}
-
-#teaching th:nth-child(2),
-#teaching td:nth-child(2) {
-  width: 40%;
-  white-space: normal;
-}
-
-#teaching th:nth-child(3),
-#teaching td:nth-child(3) {
-  width: 20%;
-  white-space: nowrap;
-}
-
-#teaching th:nth-child(4),
-#teaching td:nth-child(4) {
-  width: 22%;
-  white-space: nowrap;
+  max-width: none !important;
 }
 
 /* ===== Links ===== */
@@ -180,17 +69,11 @@ a:hover {
 /* ===== Profile image ===== */
 .avatar,
 .portrait {
-  border-radius: 20px !important;
+  border-radius: 16px !important;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
-/* ===== Lists ===== */
-.article-style ul li,
-.article-style ol li {
-  margin-bottom: 0.35rem;
-}
-
-/* ===== Publications ===== */
+/* ===== Publication cards ===== */
 .view-citation {
   background: #ffffff;
   border: 1px solid #e3eaf3;
@@ -202,10 +85,10 @@ a:hover {
 
 /* ===== MUST banner ===== */
 .must-banner {
-  margin: 1rem 0 1.5rem 0;
-  border-radius: 20px;
+  margin: 0.75rem 0 1.25rem 0;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
 .must-banner img {
@@ -218,8 +101,8 @@ a:hover {
 .site-footer {
   border-top: 1px solid #e4ebf3;
   background: #f6f9fc;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .site-footer p,
@@ -230,39 +113,12 @@ a:hover {
   margin-bottom: 0;
 }
 
-.site-footer .container {
-  text-align: center;
-}
-
-/* Hide all footer lines except the first copyright line */
-.site-footer .container p:not(:first-of-type),
-.site-footer .container .powered-by,
-.site-footer .container .site-footer__credits,
-.site-footer .container .credits,
-.site-footer .container div:not(:first-child) {
+/* Hide Hugo Blox credit line */
+.site-footer .powered-by,
+.site-footer .page-footer__credits,
+.site-footer .site-footer__credits,
+.site-footer .credits {
   display: none !important;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1200px) {
-  .universal-wrapper,
-  .article-style,
-  .markdown-body {
-    max-width: 100% !important;
-  }
-
-  #teaching table {
-    table-layout: auto;
-  }
-
-  #teaching th:nth-child(1),
-  #teaching td:nth-child(1),
-  #teaching th:nth-child(3),
-  #teaching td:nth-child(3),
-  #teaching th:nth-child(4),
-  #teaching td:nth-child(4) {
-    white-space: normal;
-  }
 }
 
 @media (max-width: 768px) {
@@ -272,48 +128,7 @@ a:hover {
     padding-bottom: 3rem;
   }
 
-  .article-style th,
-  .article-style td {
-    padding: 0.8rem 0.75rem;
-    font-size: 0.96rem;
-  }
-
-  #teaching th,
-  #teaching td {
-    white-space: normal !important;
-  }
-
   .must-banner {
-    border-radius: 14px;
+    border-radius: 12px;
   }
-}
-
-/* ===== Teaching page table ===== */
-#courses .universal-wrapper,
-#courses .article-style,
-#courses .markdown-body {
-  max-width: 1500px !important;
-}
-
-#courses table {
-  width: 100%;
-  table-layout: auto;
-}
-
-#courses th,
-#courses td {
-  padding: 1rem 1.1rem;
-  vertical-align: top;
-}
-
-#courses th:nth-child(1),
-#courses td:nth-child(1) {
-  white-space: nowrap;
-}
-
-#courses th:nth-child(3),
-#courses td:nth-child(3),
-#courses th:nth-child(4),
-#courses td:nth-child(4) {
-  white-space: nowrap;
 }
