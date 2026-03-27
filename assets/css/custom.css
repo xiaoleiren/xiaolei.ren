@@ -120,6 +120,9 @@ a:hover {
 .site-footer .credits {
   display: none !important;
 }
+.site-footer p + p {
+  display: none !important;
+}
 
 @media (max-width: 768px) {
   .home-section,
