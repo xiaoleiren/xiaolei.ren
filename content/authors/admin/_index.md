@@ -83,8 +83,8 @@ awards:
 
 ## About Me
 
-I am an Assistant Professor at the School of Computer Science and Engineering, Macau University of Science and Technology (MUST). I received my Ph.D. and M.S. from The University of Texas at Arlington, and my B.S. from Jilin University.
+I am an Assistant Professor at the School of Computer Science and Engineering, Macau University of Science and Technology (MUST).
 
-My research focuses on software security, intelligent program analysis, binary code analysis, compiler optimization, and trustworthy AI systems.
+My research focuses on software security, program analysis, binary analysis, and trustworthy AI systems, with an emphasis on building reliable and secure software foundations.
 
-I am actively looking for motivated students at all levels. Please feel free to contact me by email for collaboration, student opportunities, or research discussions.
+I welcome collaborations and inquiries from students interested in these areas.
