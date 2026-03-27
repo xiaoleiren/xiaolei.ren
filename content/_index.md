@@ -174,7 +174,6 @@ sections:
       title: Contact
       subtitle: ''
       text: |-
-        **Xiaolei Ren**  
         - Email: [xlren@must.edu.mo](mailto:xlren@must.edu.mo)
         - Google Scholar: [Profile](https://scholar.google.com/citations?user=E4KRUtoAAAAJ&hl=en)
         - Faculty Profile: [MUST Page](https://fie.must.edu.mo/id-1444/person/view/id-12435.html)
