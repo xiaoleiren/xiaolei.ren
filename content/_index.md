@@ -22,9 +22,10 @@ sections:
       title: Highlights
       subtitle: ''
       text: |-
+        - Recent work accepted at IROS 2026
+        - Recent work accepted at FSE 2025
         - Assistant Professor at MUST
         - ACM SIGPLAN Distinguished Paper Award (PLDI 2021)
-        - Recent work accepted at FSE 2025
         - Recruiting students and research collaborators
     design:
       columns: '2'
