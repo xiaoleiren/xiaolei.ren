@@ -102,8 +102,7 @@ sections:
       subtitle: ''
       text: |-
         - **Assistant Professor**, Macau University of Science and Technology
-        - **Research Associate**, Tsinghua University
-        - **Graduate Research Assistant / Teaching Assistant**, The University of Texas at Arlington
+        - **Graduate Research Assistant/Teaching Assistant**, The University of Texas at Arlington
     design:
       columns: '2'
 
