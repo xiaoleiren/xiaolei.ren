@@ -115,6 +115,7 @@ sections:
         ### Leadership and Service
         - **Vice Chair**, IEEE Computer Society Macau Chapter (2025–Present)
         - **Secretary**, Research Committee, School of Computer Science and Engineering, MUST (2024–Present)
+        - **Associate Program Chair**, ACM SIGCSE Technical Symposium 2027 (SIGCSE TS 2027)
         - **Panel Chair**, CCF 19th International Conference on Service Science (2026)
         - **Local Chair**, IEEE 32nd Asia-Pacific Software Engineering Conference (2025)
 
